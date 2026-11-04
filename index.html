@@ -19,7 +19,7 @@
 
     <div class="project">
         <h2>1. Prompt Engineering Lab</h2>
-        <p>Лаборатория промтов: сравнение baseline и RICCE, Few-shot, цепочки промтов, тесты JSON.</p>
+        <p>Лаборатория промтов: baseline, RICCE, Few-shot, цепочки, JSON-тесты. Автооценка 20 задач × 3 варианта (baseline 90%, RICCE 90%, Few-shot 10%). Оборонительный промпт, guardrails (PII, токсичность).</p>
         <div class="links">
             <a href="https://github.com/redsea1970/Prompt-Engineering-Lab">GitHub (код)</a>
         </div>
@@ -27,7 +27,7 @@
 
     <div class="project">
         <h2>2. AI Review Intelligence</h2>
-        <p>Веб-приложение для анализа отзывов с ИИ-анализом и статистикой.</p>
+        <p>Streamlit-приложение для анализа отзывов: AI-судья (4.20/5), кэширование, фильтр PII (маскировка email/телефона), точность 100% на тестовом CSV.</p>
         <div class="links">
             <a href="https://github.com/redsea1970/AI-Review-Intelligence">GitHub (код)</a>
         </div>
@@ -35,7 +35,7 @@
 
     <div class="project">
         <h2>3. Telegram AI Assistant</h2>
-        <p>ИИ-консультант по подбору оборудования в Telegram.</p>
+        <p>Telegram-бот (aiogram): inline-кнопки 👍/👎, краткосрочная и долговременная память (user_prefs.json), PII-фильтр.</p>
         <div class="links">
             <a href="https://github.com/redsea1970/telegram-ai-assistant">GitHub (код)</a>
         </div>
@@ -43,7 +43,7 @@
 
     <div class="project">
         <h2>4. Prompt Library</h2>
-        <p>Библиотека промтов с категориями и поиском.</p>
+        <p>Библиотека из 23 промптов: роли, паттерны, домены, автоматизация, 10 JSON-шаблонов. Версионирование через prompts.py.</p>
         <div class="links">
             <a href="https://github.com/redsea1970/prompt-library">GitHub (код)</a>
         </div>
@@ -51,7 +51,7 @@
 
     <div class="project">
         <h2>5. Portfolio Cases</h2>
-        <p>Кейсы: как решались задачи, какие инструменты использовались.</p>
+        <p>3 кейса (анализ отзывов, недельный отчёт, лендинг): prompt.md, input/output, notes.md с ограничениями.</p>
         <div class="links">
             <a href="https://github.com/redsea1970/portfolio-cases">GitHub (код)</a>
         </div>
@@ -59,7 +59,7 @@
 
     <div class="project">
         <h2>6. LLM Evaluation Harness</h2>
-        <p>Конвейер оценки качества ответов LLM.</p>
+        <p>Харнесс оценки LLM: 20 тестов, exact match (45%), AI-судья (0.4583), pairwise comparison с проверкой позиционного предубеждения (40% консистентности).</p>
         <div class="links">
             <a href="https://github.com/redsea1970/llm-evaluation-harness">GitHub (код)</a>
         </div>
@@ -67,7 +67,7 @@
 
     <div class="project">
         <h2>7. RAG Docs Assistant</h2>
-        <p>RAG-ассистент по документам с поиском и генерацией ответов.</p>
+        <p>RAG с гибридным поиском (TF-IDF + эмбеддинги, RRF), Contextual Retrieval. Метрики: precision 0.80, faithfulness 0.49.</p>
         <div class="links">
             <a href="https://github.com/redsea1970/rag-docs-assistant">GitHub (код)</a>
         </div>
@@ -75,7 +75,7 @@
 
     <div class="project">
         <h2>8. MM-RAG Visual</h2>
-        <p>Мультимодальный RAG: поиск по изображениям и тексту.</p>
+        <p>Мультимодальный RAG: поиск по тексту и описаниям изображений, TF-IDF, ответ с источником.</p>
         <div class="links">
             <a href="https://github.com/redsea1970/mm-rag-visual">GitHub (код)</a>
         </div>
@@ -83,7 +83,7 @@
 
     <div class="project">
         <h2>9. RAG Evaluation with RAGAS</h2>
-        <p>Оценка RAG-системы с метриками RAGAS (faithfulness, relevancy).</p>
+        <p>Оценка RAG: context_precision 0.867, context_recall 0.741, faithfulness 0.789, answer_relevancy 0.423. Расширение запроса.</p>
         <div class="links">
             <a href="https://github.com/redsea1970/rag-eval-ragas">GitHub (код)</a>
         </div>
@@ -91,7 +91,7 @@
 
     <div class="project">
         <h2>10. RAG LangGraph Agent</h2>
-        <p>Агентный RAG: циклический граф с узлами agent/retrieve/improve/generate.</p>
+        <p>Циклический граф (agent → retrieve → improve → generate) на чистом Python, без LangGraph API. 4/5 вопросов с ответом.</p>
         <div class="links">
             <a href="https://github.com/redsea1970/rag-langgraph-agent">GitHub (код)</a>
         </div>
@@ -99,7 +99,7 @@
 
     <div class="project">
         <h2>11. RAG Security Red Team</h2>
-        <p>Атака prompt probing на RAG и защита через LLM-судью.</p>
+        <p>Red team для RAG: иерархия инструкций, метрики ASR (0%) и FRR (70%), 10 атак + 10 безопасных запросов.</p>
         <div class="links">
             <a href="https://github.com/redsea1970/rag-security-redteam">GitHub (код)</a>
         </div>
@@ -107,7 +107,7 @@
 
     <div class="project">
         <h2>12. Mini Agent</h2>
-        <p>Агент с ReAct: калькулятор, чтение/запись файлов, веб-поиск.</p>
+        <p>ReAct + Reflexion: цикл Thought → Action → Observation, метрики success_rate, false_done, avg_steps. Сравнение с рефлексией и без.</p>
         <div class="links">
             <a href="https://github.com/redsea1970/mini-agent">GitHub (код)</a>
         </div>
@@ -115,7 +115,7 @@
 
     <div class="project">
         <h2>13. AI Architecture Blueprint</h2>
-        <p>Схема архитектуры AI-приложения + YAML-конфиги слоёв.</p>
+        <p>Эталонная архитектура AI-приложения: 9 слоёв, 4 YAML-конфига, Mermaid-схема, guardrails и prompts.py.</p>
         <div class="links">
             <a href="https://github.com/redsea1970/ai-architecture-blueprint">GitHub (код)</a>
         </div>
@@ -123,7 +123,7 @@
 
     <div class="project">
         <h2>14. Finetune vs RAG</h2>
-        <p>Сравнение дообучения и RAG по метрикам.</p>
+        <p>Сравнение Zero-shot (0%) / RAG (80%) / Finetune (100%, demo): синтетика (85 пар), расширение запроса, таблица.</p>
         <div class="links">
             <a href="https://github.com/redsea1970/finetune-vs-rag">GitHub (код)</a>
         </div>
@@ -131,7 +131,7 @@
 
     <div class="project">
         <h2>15. RAG-Eval-Monitor</h2>
-        <p>Конвейер оценки и мониторинга RAG-систем: метрики качества, AI-судья на TF-IDF, срезы данных, обнаружение дрейфа. Демо-режим без API.</p>
+        <p>Конвейер оценки и мониторинга RAG: метрики, AI-судья на TF-IDF, срезы данных, логирование JSONL, дрейф. Демо без API.</p>
         <div class="links">
             <a href="https://github.com/redsea1970/rag-eval-monitor">GitHub (код)</a>
         </div>
