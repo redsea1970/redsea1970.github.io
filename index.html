@@ -195,8 +195,8 @@
     </div>
 
     <div class="card">
-        <h2>26. GraphRAG (NLP + граф знаний)</h2>
-        <p>Извлечение сущностей и связей из русского текста (Natasha: PER/ORG/LOC, WORKS_AT/LOCATED_IN/RELATED_TO), построение графа знаний (NetworkX), загрузка в Neo4j через Docker (MERGE узлов/связей). Оверрайды организаций (Сбер, Газпром → ORG). Стек: Python, spaCy, Natasha, NetworkX, Neo4j (Docker), LangChain.</p>
+        <h2>26. GraphRAG + Neo4j + RAG (demo)</h2>
+        <p>GraphRAG-демо: извлечение сущностей и связей из русского текста (Natasha: PER/ORG/LOC, WORKS_AT/LOCATED_IN/RELATED_TO), построение графа знаний (NetworkX), загрузка в Neo4j через Docker (типизированные связи: MERGE по имени отношения). Оверрайды организаций (Сбер, Газпром → ORG). RAG-слой: вопрос → сущности → retrieval фактов из графа (Neo4j + офлайн-fallback graph.json) → ответ MockLLM (детерминированный, без ключей); интерфейс LLMClient с заглушками Ollama/OpenAI для подключения реальных провайдеров. Стек: Python, spaCy, Natasha, NetworkX, Neo4j (Docker), LangChain.</p>
         <div class="links">
             <a href="https://github.com/redsea1970/graphrag">GitHub (код)</a>
         </div>
