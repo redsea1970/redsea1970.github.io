@@ -218,5 +218,14 @@
         </div>
     </div>
 
+    <div class="card">
+        <h2>29. ci-cd-pipeline: CI/CD + Docker + GHCR</h2>
+        <p>Учебный Python-проект с полным CI/CD-пайплайном: пакет src/app (add, health), тесты pytest. GitHub Actions: job test (black --check, mypy strict, pytest) и job docker (сборка и пуш образа в GHCR ghcr.io/redsea1970/ci-cd-pipeline:latest через GITHUB_TOKEN). Dockerfile на python:3.12-slim, установка пакета через pip install -e . Стек: Python, pytest, black, mypy, Docker, GitHub Actions, GHCR.</p>
+        <div class="links">
+            <a href="https://github.com/redsea1970/ci-cd-pipeline">GitHub (код)</a>
+            <a href="https://github.com/redsea1970/ci-cd-pipeline/pkgs/container/ci-cd-pipeline">GHCR (образ)</a>
+        </div>
+    </div>
+
 </body>
 </html>
