@@ -196,7 +196,7 @@
 
     <div class="card">
         <h2>26. GraphRAG + Neo4j + RAG (demo)</h2>
-        <p>GraphRAG-демо: извлечение сущностей и связей из русского текста (Natasha: PER/ORG/LOC, WORKS_AT/LOCATED_IN/RELATED_TO), построение графа знаний (NetworkX), загрузка в Neo4j через Docker (типизированные связи: MERGE по имени отношения). Оверрайды организаций (Сбер, Газпром → ORG). RAG-слой: вопрос → сущности → retrieval фактов из графа (Neo4j + офлайн-fallback graph.json) → ответ MockLLM (детерминированный, без ключей); интерфейс LLMClient с заглушками Ollama/OpenAI для подключения реальных провайдеров. Стек: Python, spaCy, Natasha, NetworkX, Neo4j (Docker), LangChain.</p>
+        <p>GraphRAG-демо: извлечение сущностей и связей из русского текста (Natasha: PER/ORG/LOC, WORKS_AT/LOCATED_IN/RELATED_TO), построение графа знаний (NetworkX), загрузка в Neo4j через Docker (типизированные связи: MERGE по имени отношения). Оверрайды организаций (Сбер, Газпром → ORG). RAG-слой: вопрос → сущности → retrieval фактов из графа (Neo4j + офлайн-fallback graph.json) → ответ LLM. Провайдеры LLM: MockLLM (офлайн), OllamaLLM (локальная Ollama через HTTP /api/generate, env OLLAMA_HOST/OLLAMA_MODEL) и OpenAILLM (env OPENAI_API_KEY/OPENAI_MODEL/OPENAI_BASE_URL); мягкий fallback на MockLLM при недоступности провайдера. Переключение в CLI: python rag_demo.py --llm mock|ollama|openai "...". Стек: Python, spaCy, Natasha, NetworkX, Neo4j (Docker), LangChain, httpx, Ollama, OpenAI.</p>
         <div class="links">
             <a href="https://github.com/redsea1970/graphrag">GitHub (код)</a>
         </div>
