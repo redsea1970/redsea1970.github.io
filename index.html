@@ -201,5 +201,14 @@
             <a href="https://github.com/redsea1970/graphrag">GitHub (код)</a>
         </div>
     </div>
+
+    <div class="card">
+        <h2>27. ai-scraper: многопоточный веб-скрапер + БД</h2>
+        <p>Многопоточный веб-скрапер на ThreadPoolExecutor (по умолчанию 8 воркеров): загрузка страниц (requests + BeautifulSoup4, таймауты, User-Agent, обрезка script/style), извлечение заголовка и текста. Хранение в SQLite через SQLAlchemy 2.0 ORM (DeclarativeBase, Mapped): модель Page, upsert по url (повторный запуск не дублирует записи), потокобезопасная запись под threading.Lock. CLI на argparse, статистика total/ok/failed/saved. Тесты pytest (3 passed). Стек: Python, requests, BeautifulSoup4, SQLAlchemy 2.0, SQLite, ThreadPoolExecutor, pytest.</p>
+        <div class="links">
+            <a href="https://github.com/redsea1970/ai-scraper">GitHub (код)</a>
+        </div>
+    </div>
+
 </body>
 </html>
